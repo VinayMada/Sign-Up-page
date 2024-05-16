@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.signup-form {
+  max-width: 425px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #c0c5c1bf;
+}
+
+.signup-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  width: 90%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-field {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle svg {
+  font-size: 16px;
+}
+
+.focused {
+  position: absolute;
+  bottom: 84%;
+  right: 20px;
+  cursor: pointer;
+}
+
+.terms-checkbox {
+  margin-top: 10px;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.otp-container {
+  @apply flex justify-between gap-2;
+  width: 90%;
+
+}
+
+.otp-container input {
+  @apply !mr-0 flex-1 py-5 outline-none;
+  color: #fff;
+}
+
+.react-tel-input .form-control {
+  @apply !w-full py-6 !text-base;
+}
+
+input:focus+label,
+input:not(:placeholder-shown)+label {
+  opacity: 1;
+  transform: scale(0.75) translateY(-70%) translateX(-14px);
+}
